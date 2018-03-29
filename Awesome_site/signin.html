@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in page</title>
+	<link rel=icon href="https://cdn.dribbble.com/users/25514/screenshots/1566322/book-mac-app-icon-design-psd-free-ramotion.png" type="image/gif"sizes="16*16">
+	<style>
+		body{
+		background-image: url("http://atgbcentral.com/data/out/72/4546040-background-image.jpg");
+
+		}
+		.wrap{
+			width:50%;
+			margin:auto;
+			background:lightblue;
+			margin-top:70px;
+			padding:5px;  
+		}
+		form{
+			padding:10px;
+			font-family: arial;
+			border: 1px dotted white;
+		}
+		h2{
+			text-align:center;
+			background: orange;
+			color: white;
+			padding:10px;
+			border-radius: 10px;
+
+		}
+		input{
+			padding:10px;
+			margin:5px;
+			border-radius: 5px;
+			border:none;
+		}
+		input[type=text], input[type=password]{
+			width: 90%;
+
+		}
+		input[type=Submit]{
+			display: block;
+			width: 30%;
+			background:orange;
+			cursor:pointer;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;  
+			margin: 10px auto;
+		}
+		input[type=Submit]:hover{
+			background:blue;
+		}
+		label{
+			padding-left: 10px ;
+
+		}
+		.img{
+			
+            display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 30%;
+            
+        }
+        .container{
+			
+            width:50%;
+            margin:auto;
+            
+        }
+	</style>
+</head>
+
+<body>
+	<div class ="wrap">
+		<form>
+			<img class="img" src="https://i.pinimg.com/originals/1e/7d/9c/1e7d9c375bfa046a70c4bc20cf2a0ac6.jpg" alt="logo">
+			<h2> User sign in </h2>
+			<div class="container">
+				<label for="name"> Name </label>
+				<input type ="text" name ="username" placeholder="User name" required>	
+				<br>
+				<label for="password">Password </label>
+				<input type="password" name="password" required>
+			</div>
+			
+
+			<input type="Submit" value="sign in">
+			<p align="center"> <a href="ui2_form.html">Register if new user</a> </p>
+		</form>
+	</div>	
+</body>
+</html>

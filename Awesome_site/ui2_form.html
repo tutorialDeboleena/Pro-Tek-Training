@@ -1,0 +1,84 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<style>
+	body{
+		background-image: url("http://atgbcentral.com/data/out/72/4546040-background-image.jpg");
+
+	}
+	.wrap{
+		width:350;
+		margin:auto;
+		background:lightblue;
+		margin-top:70px;
+		padding:5px;  
+	}
+	form{
+		padding:10px;
+		font-family: arial;
+		border: 1px dotted white;
+	}
+	h2{
+		text-align:center;
+		background: orange;
+		color: white;
+		padding:10px;
+		border-radius: 10px;
+
+	}
+	input{
+		padding:10px;
+		margin:5px;
+		border-radius: 5px;
+		border:none;
+	}
+	input[type=text], input[type=email], input[type=number], input[type=tel]{
+		width: 90%;
+
+	}
+	input[type=submit]{
+		display: block;
+		width: 50%;
+		background:orange;
+		cursor:pointer;
+		font-size: 18px;
+		font-weight: bold;
+		color: white;  
+		margin: 10px auto;
+	}
+	input[type=submit]:hover{
+		background:blue;
+	}
+	label{
+		padding-left: 10px ;
+	}
+</style>
+<title>Registration Form</title>
+<link rel=icon href="https://cdn.dribbble.com/users/25514/screenshots/1566322/book-mac-app-icon-design-psd-free-ramotion.png" type="image/gif"sizes="16*16">
+</head>
+<body>
+	<div class ="wrap">
+		<form>
+			<h2> Registration Form </h2>
+			<label for="name"> Name </label>
+			<input type ="text" name ="username" placeholder="User name" required>	
+
+			<label for="age">Age </label>
+			<input type="number" name="age" min=1  max=99 required>
+			
+			<label for="phoneNo">Phone Number </label>
+			<input type ="text" name ="PhoneNo" placeholder="Phone Number"required pattern="[0-9]*" minlength="10" maxlength="10">
+			
+			<label for="email">Email </label> <input type="email" name="email" placeholder="email id" required>
+
+			<label for="gender">Gender </label>	
+			<select type="text" name="gender">
+				<option value = male>male</option>
+				<option value = male>female</option>
+			</select>
+
+			<input type="submit" value="Submit">
+
+		</form>
+	</div>	
+</body>
